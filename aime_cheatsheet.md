@@ -26,7 +26,7 @@
 
 ## Number Theory
 
-- **LTE, odd prime.** $v_p(t)=\max\{j:p^j\mid t\}$; $v_p(a^n-b^n)=v_p(a-b)+v_p(n)$ if $p\mid a-b$, $p\nmid ab$, $n\ge1$; for odd $n$, replace differences by sums when $p\mid a+b$. **Trigger:** Find prime exponents in powers’ differences/sums. [LTE](https://s3.amazonaws.com/aops-cdn.artofproblemsolving.com/resources/articles/lifting-the-exponent.pdf)
+- **LTE, odd prime.** $v_p(t)=\max\{j:p^j\mid t\}$; $v_p(a^n-b^n)=v_p(a-b)+v_p(n)$ if $p\mid a-b$, $p\nmid ab$, $n\ge1$; for odd $n$, replace differences by sums when $p\mid a+b$. **Trigger:** Find prime exponents in powers’ differences/sums.
 - **LTE, two.** Odd $a,b$: $v_2(a^n-b^n)=v_2(a-b)$ for odd $n$; for even $n$, $v_2(a-b)+v_2(a+b)+v_2(n)-1$; odd $n$: $v_2(a^n+b^n)=v_2(a+b)$. **Trigger:** Determine exact powers of two dividing exponential expressions.
 - **Bézout/CRT.** $au+mv=\gcd(a,m)$; coprime: $a^{-1}\equiv u\pmod m$. Pairwise-coprime $m_i$: $x\equiv\sum a_iM_i(M_i^{-1}\bmod m_i)\pmod M$, $M=\prod m_i$, $M_i=M/m_i$. **Trigger:** Combine congruences; noncoprime pairs require agreement modulo their gcd.
 - **Multiplicative functions.** $n=\prod p_i^{\alpha_i}$: $\tau(n)=\prod(\alpha_i+1)$, $\sigma(n)=\prod\frac{p_i^{\alpha_i+1}-1}{p_i-1}$, $\phi(n)=n\prod(1-1/p_i)$; $a^{\phi(n)}\equiv1\pmod n$ if $\gcd(a,n)=1$. **Trigger:** Count/sum divisors or reduce modular exponents.
