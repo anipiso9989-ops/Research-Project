@@ -21,7 +21,7 @@
 - **Catalan.** $C_n=\frac1{n+1}\binom{2n}{n}$; $C_{n+1}=\sum_{i=0}^nC_iC_{n-i}$. **Trigger:** Count balanced parentheses, noncrossing structures, or paths below the diagonal.
 - **Derangements.** $D_n=n!\sum_{k=0}^n(-1)^k/k!$; exactly $r$ fixed points: $\binom nrD_{n-r}$. **Trigger:** Count permutations with restricted fixed points.
 - **Finite-state counting.** $v_{n+1}=Tv_n$, $v_n=T^nv_0$. **Trigger:** Local adjacency restrictions allow a small state graph.
-- **Burnside.** $\#\text{orbits}=|G|^{-1}\sum_{g\in G}|\operatorname{Fix}(g)|$. **Trigger:** Count arrangements equivalent under specified rotations/reflections.
+- **Burnside.** $#\text{orbits}=|G|^{-1}\sum_{g\in G}|\text{Fix}(g)|$. **Trigger:** Count arrangements equivalent under specified rotations/reflections.
 - **Conditional probability.** $\Pr(A\mid B)=\Pr(A\cap B)/\Pr(B)$; $\Pr(A)=\sum_i\Pr(A\mid B_i)\Pr(B_i)$ for a partition $(B_i)$. **Trigger:** Conditioning changes the sample space or cases have unequal weights.
 
 ## Number Theory
@@ -33,7 +33,7 @@
 - **Factorial valuations.** $v_p(n!)=\sum_{j\ge1}\lfloor n/p^j\rfloor$. **Trigger:** Determine factorial/binomial divisibility or trailing zeros.
 - **SFFT.** $xy+ax+by=c\iff(x+b)(y+a)=c+ab$; $Axy+Bx+Cy=D\implies(Ax+C)(Ay+B)=AD+BC$. **Trigger:** Convert integer equations into divisor pairs; retain congruence/sign constraints.
 - **Pell.** $x^2-Dy^2=1$: $x_k+y_k\sqrt D=(x_1+y_1\sqrt D)^k$ ($D\in\mathbb Z_{>0}$ nonsquare; least positive solution from continued-fraction convergents). **Trigger:** Find integer pairs satisfying quadratic square conditions.
-- **Order/residue obstructions.** $a^k\equiv1\pmod m\iff\operatorname{ord}_m(a)\mid k$ ($\gcd(a,m)=1$); squares modulo $8$: $\{0,1,4\}$; modulo $3$: $\{0,1\}$. **Trigger:** Restrict exponential periods or eliminate impossible integer solutions.
+- **Order/residue obstructions.** $a^k\equiv1\pmod m\iff\text{ord}_m(a)\mid k$ ($\gcd(a,m)=1$); squares modulo $8$: $\{0,1,4\}$; modulo $3$: $\{0,1\}$. **Trigger:** Restrict exponential periods or eliminate impossible integer solutions.
 
 ## Geometry & Trigonometry
 
@@ -41,7 +41,7 @@
 - **Stewart.** $D\in BC$, $BD=m$, $DC=n$, $AD=d$: $b^2m+c^2n=a(d^2+mn)$. **Trigger:** Compute arbitrary cevian lengths.
 - **Ceva.** $D\in BC,E\in CA,F\in AB$: $\frac{BD}{DC}\frac{CE}{EA}\frac{AF}{FB}=1$; $\frac{\sin\angle BAD}{\sin\angle DAC}\frac{\sin\angle CBE}{\sin\angle EBA}\frac{\sin\angle ACF}{\sin\angle FCB}=1$. **Trigger:** Prove concurrency of internal cevians.
 - **Menelaus.** Directed ratios: $\frac{\overline{BD}}{\overline{DC}}\frac{\overline{CE}}{\overline{EA}}\frac{\overline{AF}}{\overline{FB}}=-1$. **Trigger:** Prove collinearity across three triangle sidelines.
-- **Power/radical axis.** $\operatorname{Pow}(P)=PO^2-R^2=\overline{PA}\,\overline{PB}=PT^2$; nonconcentric circles’ equal-power locus is a line; pairwise axes concur when two intersect. **Trigger:** Link secants/tangents or several circles; use directed secants.
+- **Power/radical axis.** $\text{Pow}(P)=PO^2-R^2=\overline{PA}\cdot\overline{PB}=PT^2$; nonconcentric circles’ equal-power locus is a line; pairwise axes concur when two intersect. **Trigger:** Link secants/tangents or several circles; use directed secants.
 - **Cyclic quadrilaterals.** $AC\cdot BD=AB\cdot CD+BC\cdot DA$; $K=\sqrt{(s-a)(s-b)(s-c)(s-d)}$, $s=(a+b+c+d)/2$. **Trigger:** Determine cyclic diagonals or area.
 - **Shoelace/Pick.** $K=\frac12|\sum_i(x_iy_{i+1}-y_ix_{i+1})|$; lattice polygon: $K=I+B/2-1$. **Trigger:** Compute ordered polygon area or lattice-point counts.
 - **Barycentrics.** $(u:v:w)\mapsto(uA+vB+wC)/(u+v+w)$; $G=(1:1:1)$, $I=(a:b:c)$, $H=(\tan A:\tan B:\tan C)$; right triangle: $H$ is right-angle vertex. **Trigger:** Translate centers and cevian ratios into coordinates.
