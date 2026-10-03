@@ -21,7 +21,7 @@
 - **Catalan.** $C_n=\frac1{n+1}\binom{2n}{n}$; $C_{n+1}=\sum_{i=0}^nC_iC_{n-i}$. **Trigger:** Count balanced parentheses, noncrossing structures, or paths below the diagonal.
 - **Derangements.** $D_n=n!\sum_{k=0}^n(-1)^k/k!$; exactly $r$ fixed points: $\binom nrD_{n-r}$. **Trigger:** Count permutations with restricted fixed points.
 - **Finite-state counting.** $v_{n+1}=Tv_n$, $v_n=T^nv_0$. **Trigger:** Local adjacency restrictions allow a small state graph.
-- **Burnside.** $#\text{orbits}=|G|^{-1}\sum_{g\in G}|\text{Fix}(g)|$. **Trigger:** Count arrangements equivalent under specified rotations/reflections.
+- **Burnside.** $\text{orbits}=|G|^{-1}\sum_{g\in G}|\text{Fix}(g)|$. **Trigger:** Count arrangements equivalent under specified rotations/reflections.
 - **Conditional probability.** $\Pr(A\mid B)=\Pr(A\cap B)/\Pr(B)$; $\Pr(A)=\sum_i\Pr(A\mid B_i)\Pr(B_i)$ for a partition $(B_i)$. **Trigger:** Conditioning changes the sample space or cases have unequal weights.
 
 ## Number Theory
